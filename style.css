@@ -82,9 +82,16 @@ nav h1{
 }
 
 #slidingText h2{
-    font-size: 8rem;
+       font-size: 8rem;
     width: 300%;
      margin: 0 2vw;
+     text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;  
+    color: rgb(20, 19, 19);
+    font-family: "GilroyM";
 
 }
 #about{
