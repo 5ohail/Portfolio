@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "moranga";
+    src: url(moranga.ttf);
+}
+@font-face {
+    font-family: "GilroySB";
+    src: url(Gilroy-Semibold.otf);
+}
+@font-face {
+    font-family: "GilroyM";
+    src: url(Gilroy-Medium.otf);
+}
+@font-face {
+    font-family: "GilroyB";
+    src: url(Gilroy-Bold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "moranga";
+    scroll-behavior: smooth;
+}
+html,body{
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(20, 19, 19);
+    color: white;
+
+
+}
+
+main{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3vw 1.5vw;
+    overflow: hidden;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 2vh;
+}
+nav h1{
+    font-size: 2.5vw;
+    width: 1vw;
+    line-height: 2.4vw;
+    font-weight: 800;
+}
+#resume{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1vw;
+    padding: 0.8vw;
+    border-radius: 2vw;
+    font-family: "GilroyM";
+    font-weight: 700;
+    background-color: rgba(0, 255, 255, 0.908);
+    box-shadow: 0 0 1vw rgb(0, 255, 255);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    padding: 9vw 0 ;
+    overflow-x: hidden;
+}
+#home h1{
+    font-size: 3.5vw;
+}
+#home img{
+    max-width: 70%;
+    height: 60%;
+    object-fit: cover;
+    margin: 2vw;
+    filter: grayscale(80%);
+}
+
+#slidingText h2{
+    font-size: 8rem;
+    width: 300%;
+     margin: 0 2vw;
+
+}
+#about{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+#navBtn img{
+height: 6rem;
+}
+#navBtn a{
+    width:  4vw;
+}
+footer{
+    background-color: rgb(52, 52, 52);
+    position: relative;
+}
+footer h1{
+    font-size: 8.9vw;
+    padding: 5vw 2vw ;
+    letter-spacing: -2px;
+    font-family: "GilroyM";
+    line-height: 12vw;
+    
+}
+footer h2{
+    font-family: "GilroyM";
+    font-size: 1.5vw;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer h1 a{
+    font-family: "GilroyM";
+}
+#mail{
+    color: #FC626A;
+    text-decoration: none;
+}
+#instagram{
+    color:#F6BA53;
+    text-decoration: none;
+}
+#linkedIn{
+    color: #51CDE7;
+    text-decoration: none;
+}
+#linkedIn:hover,#mail:hover,#instagram:hover{
+text-decoration: line-through;
+
+}
+#arrow{
+    height:5rem;
+    width: 5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
