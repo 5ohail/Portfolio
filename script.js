@@ -35,3 +35,15 @@ gsap.to("#arrow svg",{
         scrub: 3
     },
 })
+
+
+
+if (window.innerWidth <= 600){
+    document.querySelector("#resume").innerHTML = "get resume"
+}
+else if(window.innerWidth > 600){
+    document.querySelector("#resume").innerHTML = "get my resume offline"
+}
+else(
+    document.querySelector("#resume").innerHTML = "get my resume offline"
+)
