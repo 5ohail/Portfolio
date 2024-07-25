@@ -1,157 +1,214 @@
 @font-face {
-    font-family: "moranga";
-    src: url(moranga.ttf);
+  font-family: "moranga";
+  src: url(moranga.ttf);
 }
 @font-face {
-    font-family: "GilroySB";
-    src: url(Gilroy-Semibold.otf);
+  font-family: "GilroySB";
+  src: url(Gilroy-Semibold.otf);
 }
 @font-face {
-    font-family: "GilroyM";
-    src: url(Gilroy-Medium.otf);
+  font-family: "GilroyM";
+  src: url(Gilroy-Medium.otf);
 }
 @font-face {
-    font-family: "GilroyB";
-    src: url(Gilroy-Bold.otf);
+  font-family: "GilroyB";
+  src: url(Gilroy-Bold.otf);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "moranga";
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "moranga";
+  scroll-behavior: smooth;
 }
-html,body{
-
-    height: 100%;
-    width: 100%;
-    background-color: rgb(20, 19, 19);
-    color: white;
-
-
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(20, 19, 19);
+  color: white;
 }
 
-main{
-    width: 100%;
+main {
+  width: 100%;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.3vw 1.5vw;
-    overflow: hidden;
-    z-index: 99;
-    position: fixed;
-    width: 100%;
-    top: 2vh;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3vw 1.5vw;
+
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  top: 2vh;
 }
-nav h1{
-    font-size: 2.5vw;
-    width: 1vw;
-    line-height: 2.4vw;
-    font-weight: 800;
+nav h1 {
+  font-size: 2.5vw;
+  width: 1vw;
+  line-height: 2.4vw;
+  font-weight: 800;
 }
-#resume{
-    color: white;
-    text-decoration: none;
-    font-size: 1.1vw;
-    padding: 0.8vw;
-    border-radius: 2vw;
-    font-family: "GilroyM";
-    font-weight: 700;
-    background-color: rgba(0, 255, 255, 0.908);
-    box-shadow: 0 0 1vw rgb(0, 255, 255);
+#resume {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1vw;
+  padding: 0.8vw;
+  border-radius: 2vw;
+  font-family: "GilroyM";
+  font-weight: 700;
+  background-color: rgba(0, 255, 255, 0.908);
+  box-shadow: 0 0 1vw rgb(0, 255, 255);
 }
-#home{
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-    padding: 9vw 0 ;
-    overflow-x: hidden;
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9vw 0;
+  overflow-x: hidden;
 }
-#home h1{
-    font-size: 3.5vw;
+#home h1 {
+  font-size: 3.5vw;
 }
-#home img{
-    max-width: 70%;
-    height: 60%;
-    object-fit: cover;
-    margin: 2vw;
-    filter: grayscale(80%);
+#home img {
+  max-width: 70%;
+  height: 60%;
+  object-fit: cover;
+  margin: 2vw;
+  filter: grayscale(80%);
 }
 
-#slidingText h2{
-       font-size: 8rem;
-    width: 300%;
-     margin: 0 2vw;
-     text-shadow:
-    -1px -1px 0 #ffffff,
-    1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff,
-    1px 1px 0 #ffffff;  
-    color: rgb(20, 19, 19);
-    font-family: "GilroyM";
-
+#slidingText h2 {
+  font-size: 8rem;
+  width: 300%;
+  margin: 0 2vw;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+  color: rgb(20, 19, 19);
+  font-family: "GilroyM";
 }
+#about {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+#navBtn img {
+  height: 6rem;
+}
+#navBtn a {
+  width: 4vw;
+}
+footer {
+  background-color: rgb(52, 52, 52);
+  position: relative;
+}
+footer h1 {
+  font-size: 8.9vw;
+  padding: 5vw 2vw;
+  letter-spacing: -2px;
+  font-family: "GilroyM";
+  line-height: 12vw;
+}
+footer h2 {
+  font-family: "GilroyM";
+  font-size: 1.5vw;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer h1 a {
+  font-family: "GilroyM";
+}
+#mail {
+  color: #fc626a;
+  text-decoration: none;
+}
+#instagram {
+  color: #f6ba53;
+  text-decoration: none;
+}
+#linkedIn {
+  color: #51cde7;
+  text-decoration: none;
+}
+#linkedIn:hover,
+#mail:hover,
+#instagram:hover {
+  text-decoration: line-through;
+}
+#arrow {
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  nav h1{
+    font-size: 1rem;
+    line-height: 4vw;
+  }
+  #resume{
+    font-size: 0.4rem;
+    padding: 0.3rem;
+  }
+  #arrow{
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+    #home {
+    margin: 2rem 0 1rem 0;
+  }
+
+  #slidingText h2 {
+    font-size: 3rem;
+    margin: 0.8rem;
+    width: 400%;
+  }
+
+  #about {
+    transform: translate(0, -4rem);
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  #navBtn img {
+    height: 4rem;
+  }
+  #navBtn a {
+    width: 2vw;
+  }
+  footer h1 {
+    font-size: 2.7rem;
+    margin: 1rem;
+  }
+
+  footer h2{
+    font-size: 0.5rem;
+  }
+}
+ @media only screen and (max-width: 920px) {
+  #slidingText h2 {
+    width: 600%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  #home {
+    margin: 3.5rem 0 1rem 0;
+  }
+  #slidingText h2 {
+    width: 700%;
+  }
 #about{
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 800;
-}
-#navBtn img{
-height: 6rem;
-}
-#navBtn a{
-    width:  4vw;
-}
-footer{
-    background-color: rgb(52, 52, 52);
-    position: relative;
-}
-footer h1{
-    font-size: 8.9vw;
-    padding: 5vw 2vw ;
-    letter-spacing: -2px;
-    font-family: "GilroyM";
-    line-height: 12vw;
-    
-}
-footer h2{
-    font-family: "GilroyM";
-    font-size: 1.5vw;
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-footer h1 a{
-    font-family: "GilroyM";
-}
-#mail{
-    color: #FC626A;
-    text-decoration: none;
-}
-#instagram{
-    color:#F6BA53;
-    text-decoration: none;
-}
-#linkedIn{
-    color: #51CDE7;
-    text-decoration: none;
-}
-#linkedIn:hover,#mail:hover,#instagram:hover{
-text-decoration: line-through;
 
+  transform: translateY(-5rem);
 }
-#arrow{
-    height:5rem;
-    width: 5rem;
-    border: 2px solid white;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+
+
 }
