@@ -29,6 +29,7 @@ body {
   color: white;
 }
 
+
 main {
   width: 100%;
 }
@@ -148,6 +149,32 @@ footer h1 a {
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+
+#skills{
+  margin: 1rem;
+  font-size: 1.7rem;
+}
+.skill-container{
+  border: 1px solid #555555;
+  display: flex; 
+  align-items: center;
+  padding: 2rem 3rem;
+  gap: 4rem;
+  justify-content: left;
+}
+.skill-container img{
+  height: 8rem;
+  width : auto;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.skill-container img:hover{
+  scale: 1.2;
+}
+#css{
+  height: 9.1rem;
+  width: auto;
 }
 
 @media only screen and (max-width: 600px) {
