@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react';
-codex/add-animations-to-the-ui-038b7n
 import { AnimatePresence, motion } from 'framer-motion';
 import Hero from './components/Hero';
 import HorizontalProjects from './components/HorizontalProjects';
@@ -47,7 +46,6 @@ export default function App() {
         </div>
       </motion.footer>
     </div>
-=======
 import { AnimatePresence } from 'framer-motion';
 import Hero from './components/Hero';
 import ProjectShowcase from './components/ProjectShowcase';
@@ -99,6 +97,5 @@ export default function App() {
         ) : null}
       </AnimatePresence>
     </>
-main
   );
 }
