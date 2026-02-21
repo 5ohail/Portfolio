@@ -1,6 +1,5 @@
 export const projects = [
   {
- codex/add-animations-to-the-ui-038b7n
     id: 'neural-commerce',
     title: 'Neural Commerce OS',
     stack: 'MERN + AI + 3D Configurator',
@@ -37,7 +36,6 @@ export const projects = [
       'Developed expressive yet accessible UI patterns for dense healthcare datasets.',
       'Used storyboarding + motion to simplify patient journey context.',
       'Reduced onboarding time by 39% with guided interactions.'
-=======
     id: 'luma',
     title: 'Luma Motion Systems',
     category: 'Brand',
@@ -97,7 +95,6 @@ export const projects = [
     gallery: [
       'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1497015289639-54688650d173?auto=format&fit=crop&w=800&q=80'
-main
     ]
   }
 ];
