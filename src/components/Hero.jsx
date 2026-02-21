@@ -78,6 +78,5 @@ export default function Hero() {
         </a>
       </motion.div>
     </header>
-main
   );
 }
