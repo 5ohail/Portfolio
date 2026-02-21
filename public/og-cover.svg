@@ -1,7 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+codex/add-animations-to-the-ui-038b7n
   <rect width="1200" height="630" fill="#06070B"/>
   <circle cx="980" cy="110" r="190" fill="#8A5CFF" fill-opacity="0.35"/>
   <circle cx="300" cy="520" r="250" fill="#80FFE2" fill-opacity="0.2"/>
   <text x="90" y="290" fill="#E5E7EB" font-size="78" font-family="Arial" font-weight="700">Sohail Ansari</text>
   <text x="90" y="355" fill="#9CA3AF" font-size="36" font-family="Arial">Full Stack Developer • MERN • AI • Creative Dev</text>
+=======
+  <rect width="1200" height="630" fill="#0b0f19"/>
+  <circle cx="930" cy="140" r="220" fill="#7c3aed" fill-opacity="0.32"/>
+  <circle cx="320" cy="520" r="280" fill="#5eead4" fill-opacity="0.22"/>
+  <text x="90" y="300" fill="#f8fafc" font-size="84" font-family="Arial, sans-serif" font-weight="700">Aether Studio</text>
+  <text x="90" y="380" fill="#94a3b8" font-size="38" font-family="Arial, sans-serif">Creative Design Agency Portfolio</text>
+main
 </svg>
