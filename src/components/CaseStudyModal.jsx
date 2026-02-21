@@ -23,7 +23,6 @@ export default function CaseStudyModal({ project, onClose }) {
     return () => {
       document.body.style.overflow = '';
       window.removeEventListener('keydown', onEsc);
-main
     };
   }, [onClose]);
 
@@ -93,7 +92,6 @@ codex/add-animations-to-the-ui-038b7n
         <div className="case-modal__gallery">
           {project.gallery.map((item) => (
             <img key={item} src={item} alt={`${project.title} detail`} loading="lazy" />
-main
           ))}
         </div>
       </motion.dialog>
