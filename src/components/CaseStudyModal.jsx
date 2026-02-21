@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 export default function CaseStudyModal({ project, onClose }) {
- codex/add-animations-to-the-ui-038b7n
   useEffect(() => {
     const closeOnEsc = (event) => event.key === 'Escape' && onClose();
     window.addEventListener('keydown', closeOnEsc);
@@ -10,7 +9,6 @@ export default function CaseStudyModal({ project, onClose }) {
     return () => {
       window.removeEventListener('keydown', closeOnEsc);
       document.body.style.overflow = '';
-=======
   // Lock page scroll and support keyboard escape to close the dialog.
   useEffect(() => {
     const onEsc = (event) => {
@@ -60,7 +58,6 @@ codex/add-animations-to-the-ui-038b7n
             <div key={item} className="rounded-xl border border-white/10 bg-white/5 p-4 text-sm text-white/75">
               {item}
             </div>
-=======
       className="modal-backdrop"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
