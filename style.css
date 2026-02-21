@@ -29,7 +29,6 @@ body {
   color: white;
 }
 
-
 main {
   width: 100%;
 }
@@ -39,7 +38,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.3vw 1.5vw;
-
   z-index: 99;
   position: fixed;
   width: 100%;
@@ -61,7 +59,13 @@ nav h1 {
   font-weight: 700;
   background-color: rgba(0, 255, 255, 0.908);
   box-shadow: 0 0 1vw rgb(0, 255, 255);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
+#resume:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 1.8vw rgb(0, 255, 255);
+}
+
 #home {
   display: flex;
   flex-direction: column;
@@ -78,6 +82,12 @@ nav h1 {
   object-fit: cover;
   margin: 2vw;
   filter: grayscale(80%);
+  transition: filter 0.8s ease, transform 0.8s ease;
+  animation: floatImage 4.6s ease-in-out infinite;
+}
+#home img:hover {
+  filter: grayscale(20%);
+  transform: scale(1.01);
 }
 
 #slidingText h2 {
@@ -96,6 +106,11 @@ nav h1 {
 }
 #navBtn img {
   height: 6rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+#navBtn img:hover {
+  transform: translateY(-6px) scale(1.08);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 #navBtn a {
   width: 4vw;
@@ -118,6 +133,7 @@ footer h2 {
   bottom: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: pulseText 2.4s ease-in-out infinite;
 }
 footer h1 a {
   font-family: "GilroyM";
@@ -149,52 +165,86 @@ footer h1 a {
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  animation: bounceArrow 1.8s ease-in-out infinite;
 }
 
-#skills{
+#skills {
   margin: 1rem;
   font-size: 1.7rem;
 }
-.skill-container{
+.skill-container {
   border: 1px solid #555555;
-  display: flex; 
+  display: flex;
   align-items: center;
   padding: 2rem 3rem;
   gap: 4rem;
   justify-content: left;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.skill-container img{
+.skill-container:hover {
+  border-color: #9a9a9a;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+.skill-container img {
   height: 8rem;
-  width : auto;
+  width: auto;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: transform 0.5s ease;
 }
-.skill-container img:hover{
-  scale: 1.2;
+.skill-container img:hover {
+  transform: scale(1.2) rotate(-2deg);
 }
-#css{
+#css {
   height: 9.1rem;
   width: auto;
 }
 
+@keyframes floatImage {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseText {
+  0%,
+  100% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceArrow {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(7px);
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  nav h1{
+  nav h1 {
     font-size: 1.4rem;
     line-height: 4.3vw;
-    margin: 0 0.4rem ;
-
+    margin: 0 0.4rem;
   }
-  #resume{
+  #resume {
     font-size: 0.9rem;
     padding: 0.4rem;
     border-radius: 1rem;
-
   }
-  #arrow{
+  #arrow {
     height: 3rem;
     width: 3rem;
   }
-    #home {
+  #home {
     margin: 2rem 0 1rem 0;
   }
 
@@ -220,11 +270,11 @@ footer h1 a {
     margin: 1rem;
   }
 
-  footer h2{
+  footer h2 {
     font-size: 0.5rem;
   }
 }
- @media only screen and (max-width: 920px) {
+@media only screen and (max-width: 920px) {
   #slidingText h2 {
     width: 600%;
   }
@@ -236,10 +286,7 @@ footer h1 a {
   #slidingText h2 {
     width: 700%;
   }
-#about{
-
-  transform: translateY(-5rem);
-}
-
-
+  #about {
+    transform: translateY(-5rem);
+  }
 }
