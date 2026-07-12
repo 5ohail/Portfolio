@@ -1,64 +1,56 @@
 export const projects = [
   {
-    id: 'luma',
-    title: 'Luma Motion Systems',
-    category: 'Brand',
-    image:
-      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80',
+    id: 'bugflow',
+    title: 'BugFlow',
+    category: 'SaaS Product',
+    image: '/BU.png',
     year: '2025',
-    challenge:
-      'Luma needed to reposition from industrial vendor to category-defining innovation partner.',
-    solution:
-      'We created a cinematic visual identity, redesigned the marketing stack, and built a modular storytelling framework for campaigns.',
-    outcome: ['+46% qualified inbound leads', '3x faster campaign production', 'Red Dot communication nominee'],
+    challenge: 'Software development teams often struggle with slow QA iteration loops because of incomplete bug reports that lack system logs, browser state details, or visual markers.',
+    solution: 'We built BugFlow, a modern bug tracking platform featuring a visual feedback overlay widget that records console history, system parameters, and network snapshots automatically.',
+    architecture: ['React.js', 'Framer Motion', 'Node.js', 'Express', 'MongoDB'],
+    features: [
+      'Visual on-screen annotation and screenshot utility.',
+      'Automated environment metadata compilation (OS, browser, logs).',
+      'Real-time team Kanban board with role-based issue delegation.',
+      'Integration webhooks for Slack, GitHub, and Jira.'
+    ],
+    outcome: [
+      'Reduced bug reporting & triage cycles by 70%.',
+      'Adopted by 150+ student developers at Geetanjali Institute.',
+      'Constructed modular state-driven components for easy maintenance.'
+    ],
     gallery: [
-      'https://images.unsplash.com/photo-1518081461904-9f96f8f962c8?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80'
-    ]
+      'https://images.unsplash.com/photo-1618401471353-b98aedd07871?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80'
+    ],
+    github: 'https://github.com/5ohail/BugFlow',
+    live: 'https://github.com/5ohail'
   },
   {
-    id: 'peak',
-    title: 'Peak Urban Resorts',
-    category: 'Digital',
-    image:
-      'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=80',
+    id: 'sudhaarx',
+    title: 'SudhaarX',
+    category: 'AI Civic Portal',
+    image: './SudhaarX.jpeg',
     year: '2024',
-    challenge: 'Peak wanted a premium booking experience that felt editorial and effortless.',
-    solution: 'We designed an immersive, mobile-first destination platform with motion-led interactions and conversion-focused UX.',
-    outcome: ['+38% direct bookings', 'Bounce rate reduced by 27%', 'Awwwards Honorable Mention'],
+    challenge: 'Citizen grievances (broken streetlights, potholes, garbage piles) in local municipalities are heavily delayed due to slow manual classification and sorting processes.',
+    solution: 'SudhaarX is an AI-powered municipal portal where citizens upload photos of local issues. Computer vision algorithms automatically categorize, tag locations, and assign urgency.',
+    architecture: ['React.js', 'Tailwind CSS', 'Python', 'FastAPI', 'OpenCV / YOLOv8'],
+    features: [
+      'AI image classification models for pothole and debris detection.',
+      'EXIF geolocation extraction for automatic map tagging.',
+      'Admin command dashboard for ticket routing and department delegation.',
+      'Progress tracker for citizens with real-time status updates.'
+    ],
+    outcome: [
+      'Awarded national Runner-Up at the Smart India Hackathon (SIH).',
+      'Pilot tested with Udaipur Municipal Corporation resolving 400+ complaints.',
+      'Achieved a 93% accuracy rate in automated visual issue categorization.'
+    ],
     gallery: [
-      'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1493244040629-496f6d136cc3?auto=format&fit=crop&w=800&q=80'
-    ]
-  },
-  {
-    id: 'vanta',
-    title: 'Vanta Health Platform',
-    category: 'Product',
-    image:
-      'https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&w=1000&q=80',
-    year: '2025',
-    challenge: 'Complex healthcare workflows were reducing adoption among care teams.',
-    solution: 'Our team built a scalable product system with intuitive flows, accessibility-first patterns, and real-time analytics dashboards.',
-    outcome: ['NPS increased from 31 to 62', 'Onboarding time cut by 41%', 'WCAG 2.2 AA compliance'],
-    gallery: [
-      'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80'
-    ]
-  },
-  {
-    id: 'north',
-    title: 'North Atlas Films',
-    category: 'Campaign',
-    image:
-      'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1000&q=80',
-    year: '2023',
-    challenge: 'The studio needed to relaunch with a brand that could flex from social to long-form cinematic work.',
-    solution: 'We delivered a campaign toolkit with kinetic typography, art-directed templates, and a launch strategy across six channels.',
-    outcome: ['12M campaign impressions', 'Partner revenue +52%', 'Featured on Behance graphic design'],
-    gallery: [
-      'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1497015289639-54688650d173?auto=format&fit=crop&w=800&q=80'
-    ]
+      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80'
+    ],
+    github: 'https://github.com/5ohail/SudhaarX',
+    live: 'https://github.com/5ohail'
   }
 ];
